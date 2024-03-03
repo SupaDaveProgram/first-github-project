@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  nav {
+    
+    background-color: rgba(0, 0, 0, 0.623);
+    padding:12px ;
+    height: 200px;
+    
+  }
+
+.nav__logo2 {
+margin-left: 8px;    
+width: 240px;
+padding-bottom: 40px;
+border-radius: 90px;
+margin-bottom: 20px;
+animation: scalenav 1500ms ease-in-out alternate;
+}
+
+.nav__logo3 {
+  animation: scalenav 2000ms ease-in-out alternate;
+
+}
+
+.nav__moves {
+
+  animation: figure-float 2900ms infinite alternate;
+
+}
+
+.nav__figures {
+  display: flex;
+  animation: figure-float 3000ms infinite alternate;
+}
+
+@keyframes figure-float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes scalenav {
+0%{
+  rotate:720deg;
+  scale:0;
+}
+
+80% {
+  scale:1.2;
+}
+
+100% {
+  
+scale:1.;
+}
+
+}
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li {
+    list-style-type: none;
+    
+  }
+
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: swish 1000ms alternate-reverse;
+  }
+
+  .transform {
+    border:2px solid red;
+    background-color: rgba(255, 255, 255, 0.43);
+    padding: 8px 4px;
+    border-radius: 15px;
+    transition: 1000ms;
+    text-decoration: none;
+    padding-left: 8px;
+    font-size: 24px;
+    margin-left: 16px;
+    color:black;  }
+
+  .transform:hover {
+    color: brown;
+    background-color: black;
+    transition: 350ms;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+    .nav__link {
+    text-decoration: none;
+    color: black;
+    padding-left: 8px;
+    font-size: 24px;
+   
+  }
+
+  @keyframes swish {
+    0% {
+      transform: translate(0px);
+      
+    }
+    
+    100% {
+      transform: translate(1000px);
+    }
+  }
+
+  .nav__link:hover {
+    cursor:pointer;
+    text-decoration: none;
+    color: red;
+    transition: 8000ms;
+    
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  input {
+    border-color: blue;
+    margin:3px 0;
+  }
+    
+
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /**body**/
+  
+  .Skills,
+  .Animations,
+  .Transitions,
+  .Transform {
+    height: 100vh;
+    
+  }
+
+  .p__img {
+    width: 100%;
+    margin-bottom: 4px;
+
+  }
+
+  .img__title {
+    width: 10%;
+    height: 10%;
+  }
+
+  .section__para {
+    width: 100%;
+    padding: 50px;
+    font-size: 20px;
+  }
+
+  #skills,
+  #transitions {
+    background-color: black;
+    color: rgb(207, 142, 57);
+  }
+
+  #animations,
+  #transform {
+    background-color: rgb(207, 142, 57);
+  }
+
+  .para__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .section__wrapper {
+    text-align: center;
+    padding: 12p;
+  }
+
+/**footer**/
+footer {
+  background-color: antiquewhite;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.footer__img {
+    border-radius: 20px;
+    width: 50px;
+    height: inherit;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__link {
+    margin-right: 12px;
+}
+
+.page__end {
+    background-color: black;
+    border-radius: 10%;
+    padding-bottom: 20px ;
+}
+
+.page__end--img {
+    border-radius: 60px;
+    width: 30px;
+    height: inherit;
+    scale: .7;
+}
+
+.page__end--para {
+    color: antiquewhite;
+    font-size: 10px;
+    text-align: center;
+    animation: footeration 10000ms alternate-reverse infinite;
+}
+
+@keyframes footeration {
+    0% {
+        transform:translateY(0);
+    }
+    100% {
+        scale: .65;
+        transform: translateY(10px);
+    }
+    }
+
+    /**Form**/
+
+    #form {
+      display: flex;
+      height: 65vh;
+      padding: 12px;
+      background-color: rgba(0, 0, 0, 0.623);
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 4px 20px;
+    }
+
+    /**Footer**/
+    footer {
+      height: 25vh
+    }
+
+    

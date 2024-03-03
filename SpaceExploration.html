@@ -1,0 +1,122 @@
+Space Exploration Site HTML CSS
+
+
+<html>
+    <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="btn">
+        <h1>Join the exploration</h1>
+        <button>Apply</button>
+    </body>
+</html>
+
+*/Starts with (static) background image in the 
+css-you will refer to you "url" reference just 
+as you would for "src" elements./*
+example:
+body {
+    background-image: url("");
+/*
+Challenge:
+1. Center the text and button
+2. Style the button according to the design.
+   Use a class to select the button.
+*/
+
+body {
+    color: white;
+    background-image: url("images/firegoldeclipse.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn{
+    padding:6px 12px; /*using short hand padding*/
+    background: goldenrod;
+    border: none;
+    font-family: inherit;
+}
+
+
+font face techniques for specific fonts:
+search 1001fonts.com find the ".ttf" file
+
+ex:
+
+@font-face {
+    src: url("CorleoneDue.ttf");
+*/name the font family/*
+    font-family: CorleoneDue;
+}
+
+*/then target the h1 element/*
+h1 {
+    font-family: CorleoneDue;
+    text-align: center;
+    color:black;
+}
+
+ex:
+html-
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Join the exploration</h1>
+        <button class="btn">Apply</button>
+    </body>
+</html>
+
+css-
+
+body {
+    color: goldenrod;
+    background-image: url("firegoldeclipse.jpg");
+    background-size: cover;
+    text-align: center;
+    /* 
+    Set the font family here. 
+    */
+}
+
+.btn {
+    padding: 6px 12px;
+    background: goldenrod;
+    border: none;
+    font-family: inherit;
+    /* 
+    You'll need to do something here as well!
+    Can you spot what it is?
+    */}
+    
+@font-face{
+    src: url("Corleone.ttf");
+    font-family: Corleone;
+}
+
+h1{
+    font-family: Corleone;
+}
+
+The <span> tag.
+html-
+<h1>The example of <span id/class="tag">span</span></h1>
+css-
+(class)
+.tag{ border-bottom:4px solid white;
+(id)
+#tag{ border-bottom:4px solid white;
+
+To make animated images replace jpg with a webp:
+

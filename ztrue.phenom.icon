@@ -1,0 +1,46 @@
+https://media.giphy.com/media/GPT8Cn2scDlR1qKgt3/giphy.gif
+
+https://media.giphy.com/media/3DrHrnC0JMotPiopno/giphy.gif
+
+styles.css
+
+body {
+    color: gold;
+    background-image: url("images/firegoldeclipse.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#main-logo {
+    margin: 200px auto;
+    width: 550px;
+    border-radius: 900px
+}
+
+.btn {
+    padding: 6px 12px;
+    background: white;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.underline {
+    border-bottom: 4px solid sienna;
+}
+   
+html
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <img id="main-logo" src="https://media.giphy.com/media/GPT8Cn2scDlR1qKgt3/giphy.gif">
+        <h1>Join the</h> <h1>TrUe <span class="underline">Phenom</span> Icon</h1>
+        <button class="btn">Apply</button>
+    </body>
+</html>

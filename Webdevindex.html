@@ -1,0 +1,1347 @@
+index.html
+HTML stands for Hyper Text Markup Language
+Basics of using HTML text <h1></h1> - <h3></h3> & <p></p>
+h stands for heading
+p stands for paragraph
+
+<h1>Humans have reached Mars</h1>
+<h3>The Starship rocket successfully landed on the red planet this morning.</h3>
+<p>After a 115 days long journey, the crew of 12 finally arrived at their destination. 
+This is the first time humans have set foot on a planet other than Earth.</p>
+
+Basics of using image tags. no closing tag needed
+<img src="source/link goes here">
+to control the behavior of the picture to match the size of the page simply use width="100%"> see following example:
+Example: <img src="mars.jpg" width="100%">
+
+Building Website: Google Landing Page (Google Search Page)
+<img src="google.png">
+<input type="text">
+<button>Google Search</button>
+<button>I'm Feeling Lucky</button>
+
+or
+
+<img src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png" width="100%">
+<input type="text"> </p>
+<button>Google Search</button> <button>I'm Feeling Lucky</button>
+
+Basics of Anchor <a></a> tags. anchor tags have to be followed by href (hypertext reference) <a href="(link)"></a> (see example used in portfolio page)
+h1>Per David Daniels 👨‍💻</h1>
+<p>Developer | Engineer | Scientist </p>
+<a href="work.html">Check out my projects here.</a>
+
+I you want to tag a word that points to another page source in your paragraph see following example:
+
+<p>Check out the live demo <a href="https://www.google.com/">here</a></p>
+
+To make your anchor link open up in a new page simply add target="_blank">here</a>
+<p>Check out the live demo 
+    <a href="https://www.google.com/" target="_blank">here</a>
+</p>
+
+example #2: <p>Return to <a href="index.html">homepage</a></p> or to return in new page 
+<p> Return to the <a href="index.html" target="_blank">homepage</a></p>
+
+Using anchor tag in google website:
+<img src="google.png">
+<input type="text">
+<button>Google Search</button>
+<button>I'm Feeling Lucky</button>
+<p>
+    To learn more click <a href="blog.html">here</a></p>
+
+
+Basics of Document Structure:
+Doc type declaration: <!doctype html> (this tells the browser that it is html and what version of html it is so 
+when you are ready to deploy into the world wide web the browsers will be able to interpret the doc type or html type.
+<html>
+(<head> renders to metadata (styles, titles, scripts ect. This will show in the title of the webpage)
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>google.com</title>
+</head>
+<body>
+    <img src="google.png">
+    <input type="text">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+    <p>We protect your privacy. <a href="blog.html">Learn how.</a></p>
+</body>
+</html>
+
+Example of Structured program.
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="google.png">
+        <input type="text">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+        <p>We protect your privacy. <a href="blog.html">Learn how.</a></p>
+    </body>
+</html>
+
+List:Aside list
+if you want to make a list 
+<ol></ol> (ol stands for "ordered list". this is the tag used to 
+wrap the entire list) Used Inside the "<ol> tag is the "<li>" tag (li stands for list items)
+
+Example:
+
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <h1>Beijing Olympics</h1>
+        <ol>
+            <li>Norway</li>
+            <li>Germany</li>
+            <li>China</li>
+            <li>US</li>
+        </ol>
+    </body>
+</html>
+
+for "unordered list" (<ul>) you would use the "<ul>" as the wrapping tag
+This will replace the numbers with dots/bullet points
+Example:
+
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <h1>Beijing Olympics</h1>
+        <ul>
+            <li>Norway</li>
+            <li>Germany</li>
+            <li>China</li>
+            <li>US</li>
+        </ul>
+    </body>
+</html>
+
+Your Personal Website:
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <img src="daviddaniels.scientist.jpg">
+        <h1>Hi, my name is Supa Dave</h1>
+        <h2>Fun facts about me:</h2>
+        
+        <ul>
+            <li>My real name is King David Daniels</li>
+            <li>37 years old</li>
+            <li>From Texas</li>
+            <li>Played professional football</li>
+            <li>Roller skater (I can dance smooth on wheels)</li>
+        </ul>
+        <p>Please connect with me on <a href="https://res.cloudinary.com/teepublic/image/private/s--en_EWZSr--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1599250446/production/designs/13710629_0.jpg" target="_blank"> "LinkedIn here"</a></p>
+        
+            <input type=text placeholder="Enter email...">
+            
+            <button>Join newsletter</button>
+    </body>
+</html>
+
+// space, scary, military, romantic, cowboy, fantasy, superhero
+favouriteMovieGenre("fantasy")
+
+// watermelon, tomato, banana, orange, avocado, blueberry
+favouriteFruit("regular")
+
+// light, dark
+favouriteMode("dark")
+
+// sharp, soft, round
+favouriteEdgeStyle("round")
+
+
+
+////////////////////////////////////
+// IGONE THE CODE BELOW THIS LINE //
+////////////////////////////////////
+
+function setProp(prop, value) {
+    document.documentElement.style.setProperty(prop, value)
+}
+
+function favouriteEdgeStyle(style) {
+    setProp("--image", "var(--" + style + ")");
+}
+
+function favouriteMovieGenre(font) {
+    if (font) {
+        setProp("--font", "var(--" + font + ")");    
+    }
+}
+
+function favouriteMode(mode) {
+    if (mode === "light" || !mode) {
+        setProp('--background', "var(--light)");
+        setProp('--text', "var(--dark)");
+    } else if (mode === "dark") {
+        setProp('--background', "var(--dark)");
+        setProp('--text', "var(--light)");
+    }
+}
+
+function favouriteFruit(theme) {
+    if (theme === "pastel") {
+        setProp('--light', "#f2f6c3")
+        setProp('--dark', "#68c4af")
+    } else if (theme === "muted") {
+        setProp('--light', "#4c5b64")
+        setProp('--dark', "#45241c")
+    } else if (theme === "love") {
+        setProp('--light', "#f06836")
+        setProp('--dark', "#ba0001")
+    } else if (theme === "sky") {
+        setProp('--light', "#99ccff")
+        setProp('--dark', "#3366ff")
+    } else if (theme === "forrest") {
+        setProp('--light', "#91B247")
+        setProp('--dark', "#597C2B")
+    }  else if (theme === "shiny") {
+        setProp('--light', "#2e9afe")
+        setProp('--dark', "#02197c")
+    } else if (theme === "banana") {
+        setProp('--light', "#fbec5d")
+        setProp('--dark', "#6b3e26")
+    } else if (theme === "watermelon") {
+        setProp('--light', "#75b855")
+        setProp('--dark', "#ad3838")
+    } else if (theme === "tomato") {
+        setProp('--light', "#d62e2e")
+        setProp('--dark', "#600000")
+    } else if (theme === "avocado") {
+        setProp('--light', "#6b8c21")
+        setProp('--dark', "#704012")
+    } else if (theme === "orange") {
+        setProp('--light', "#ffca16")
+        setProp('--dark', "#f97300")
+    } else if (theme === "blueberry") {
+        setProp('--light', "#41a8f9")
+        setProp('--dark', "#064490")
+    } else  {
+        setProp('--light', "#f5f5f5")
+        setProp('--dark', "#222222")
+    } 
+}
+
+CSS syntax
+first create a css file in you compiler and call it styles.css then link the file inside the head of your html file see example:
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        Please accept our cookies!
+    </body> 
+</html>
+
+body {
+    background: yellow;     /* red, blue, yellow, etc */
+    color: red;             /* red, blue, yellow, etc */
+    font-size: 20px;        /* 0px - 100px and beyond */
+    font-weight: lighter;   /* lighter, normal, bold  */
+    text-align: right;      /* left, center or right  */ 
+    margin-top: 5px;        /* From 0px and upwards   */
+}
+
+Set the width of the elements:
+
+img {
+    width: 300px;
+}
+
+input {
+    width: 400px;
+}
+
+Inline & block elements:
+
+display:inline means images will display in line across the screen besides each other.
+
+display:block means images will display stacked on top of each other.
+
+Add Margins tops:
+
+img {
+    margin-top: 100px;
+    display: block;
+    width: 300px;
+}
+
+input {
+    display: block;
+    width: 400px;
+}
+
+Divs Rule the World:
+Most real developer wrap these two elements, "<img src="google.png"/>" & "<input type="text"/>" into containers and position the images 
+indirectly through "div"s
+Example:
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div>
+            <img src="google.png" />
+            <input type="text" />
+        </div>
+    </body>
+</html>
+
+div {
+    margin-top: 100px;
+}
+
+img {
+    display: block;
+    width: 300px;
+}
+
+input {
+    display: block;
+    width: 400px;
+}
+
+CSS Class
+
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <!-- Challenge - part 1: 
+            Add a class to each of these two elements -->
+            <img class="logo-img" src="google.png" />
+            <input class="move-input" type="text" placeholder="Google Search" />
+        </div>  
+    </body>
+</html>
+
+.main {
+    margin-top: 100px;
+}
+
+/* Challenge - part 2: 
+Replace the element selectors with class selectors */
+.logo-img {
+    display: block;
+    width: 272px;
+}
+
+.move-input {
+    display: block;
+    width: 372px;
+}
+
+
+Aside: Learn margins via flags (calapsing margins. the margin set with the most pixels takes presidence)
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+    </body>
+</html>
+
+
+body {
+    margin:0;
+}
+
+.red {
+    background: #c71226;
+    height: 100px;
+}
+
+.blue {
+    background: #0d1b88;
+    height: 100px;
+
+    /* Challenge: 
+    Create the flag of The Gambia.
+    But only by applying styles to the blue box! */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.green {
+    background: #397327;
+    height: 100px;
+}
+
+(Back to Google website lesson) Add space between our elements)
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+}
+
+Priscilla's Flag:
+
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <button>Priscilla</button>
+        <div class="teal0"></div>
+        <div class="aqua0"></div>
+        <div class="teal1"></div>
+    </body>
+</html>
+
+
+button {
+    color: aqua;
+    border: 8px solid ;
+    border-radius: 18px;
+    background: teal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: bolder;
+}
+
+.teal0 {
+    display: block;
+    margin-top: 20px;
+    height: 100px;
+    background: teal;
+    padding-left: auto;
+    padding-right: auto;
+    width:500px
+}
+
+.aqua0 {
+    display:block;
+    margin-top: 00px;
+    height: 100px;
+    background: aqua;
+    padding-left: auto;
+    padding-right: auto;
+    width:500px
+}
+
+.teal1{
+    display:block;
+    background: teal;
+    height: 100px;
+    padding-left: auto;
+    padding-right: auto;
+    width:500px;
+}
+
+
+Aside: centering with margins
+
+Before centering, three thing need to take place first...
+1. display block
+2. must have a width value set
+3. set the margin value left/right:auto
+example:
+img {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+Centering Content---back to Building Google Clone
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+        </div>
+        <div class="tain">
+            <button>Google Search</button> <button>I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
+
+/*
+Challenge:
+Center the logo and the search field.
+*/
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tain{
+    margin-top:30px;
+    display:block;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+Aside: Padding --this is a css concept and a close relative of margins:
+
+"padding" creates space
+example:
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card">
+            A purely peer-to-peer version of electronic cash would allow online
+            payments to be sent directly from one party to another without going through a
+            financial institution. Digital signatures provide part of the solution, but the main
+            benefits are lost if a trusted third party is still required to prevent double-spending.        
+        </div>    
+    </body>
+</html>
+
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 20px;
+}
+
+    padding-top: 20px;        <
+    padding-bottom: 20px;      <
+    padding-left: 20px;		<this is the equivalent of "padding: 20px;"
+    padding-right: 20px;       <
+
+}
+
+
+padding vs. margin
+
+"margin" gives room on the outside of the "div" 
+"padding" gives room  on the inside of the "div"
+
+Aside: border and border-radius
+
+example 1.:
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Challenge:
+    Change the values to match the design
+    in the slide */
+
+    border: 5px solid;
+    border-radius: 30px;
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+example 2.:
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 5px solid aqua;
+    border-radius: 30px;
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+example 2.:
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Challenge:
+    Change the values to match the design
+    in the slide */
+
+    border: 5px solid #222222;
+    border-radius: 20px;
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+The box model:
+The box model consist of...
+1.Margin
+2.Border
+3.Padding
+4.Content
+
+You can check and confirm the box model by using the dev tools (Right-click "inspect" look under the styles tab)
+to observe and troubleshoot the borders and padding and margin of content, hover over the content on the webpage.
+This is a really good way of debugging a site is something looks wrong.
+
+
+Aside challenge: Style Twitter button
+
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <button>Following</button>
+    </body>
+</html>
+
+
+button {
+    color: #0f1419;
+    border: 1px solid #cfd9de;
+    border-radius: 18px;
+    background: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+My version of Google:
+
+html
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+	    <button class="btn">Google Search</button>
+	    <button class="btn">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
+
+css:
+
+.main {
+    margin-top: 100px; 
+    text-align: center;   
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius:24px;
+    border-top:10px solid red;
+    border-left:8px solid goldenrod;
+    border-right:8px solid green;
+    border-bottom:10px solid royalblue
+}
+
+.btn {
+    .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: none;
+    background: #dfe1e5;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:16px;
+    padding-right:16px;
+    border-radius:5px;
+    font-size:14px;
+    
+}
+
+The way the pros do it using Flexbox:
+html:
+
+<html>
+	<head>
+		<link rel=sytlesheet href=style.css>
+	</head>
+
+	<body>
+		<div class="nav-wrapper">
+			<div class="item">Shoes</div>
+			<div class="item">Hoodies</div>
+			<div class="item">T-Shirts</div>
+		</div>
+	</body>
+</html>
+
+css:
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center; /* or "justify-content: space-around/space-between;
+}
+
+.item {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+css Recap
+
+css syntax
+inline vs block
+margins
+padding
+borders
+divs
+classes
+centering
+flexbox
+
+Aside: flexbox child containers
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Upgrade to Pro</h1>
+        
+        <div class="pricing">
+            
+            <div>
+                <h2>For individuals</h2>
+                <ul>
+                    <li>1 gb</li>
+                    <li>No support</li>
+                </ul>
+                <button>Buy now</button>
+            </div>
+            
+            <div>
+                <h2>For enterprise</h2>
+                    <ul>
+                        <li>10 gb</li>
+                    <li>Priority support</li>
+                    </ul>
+                <button>Contact us</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+    .pricing {
+    display: flex;
+}
+
+
+
+
+Mall Pricing Program
+
+html
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <div class="mall">
+        <h1> The Cove Mall</h1>
+        </div>
+        <div class= "retail">
+            
+            <div>
+            <h2>Coupon Price</h2>
+            <ol>  
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ol>
+            <button>buy cheap</button>
+            </div>
+            
+            <div>
+            <h2>Discount Price</h2>
+            <ol>
+                <li>item4</li>
+                <li>item5</li>
+                <li>item6</li>
+            </ol>
+            <button>buy deal</button>
+            </div>
+           
+            <div>
+            <h2>Saving Price</h2>
+            <ol>
+                <li>item7</li>
+                <li>item8</li>
+                <li>item9</li>
+            </ol>
+            <button>buy more</button>
+            </div>
+        
+    </div>
+        
+    </body>
+    
+</html>
+
+
+
+css
+
+.retail {
+    display: flex;
+    justify-content: space-around
+}
+
+.mall{
+    
+    display:flex;
+    justify-content:center;
+    
+    
+}
+
+
+
+charles puppy purchase site:
+
+html:
+<html>
+    
+    <title>scaling</title>
+    
+    <head>    
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <img src="https://2.bp.blogspot.com/-dTGOJQ2r9EI/U0Q5xFqVnrI/AAAAAAAAByg/1vWTM1zYfe0/s1600/english-bulldog-puppy-for-sale.jpg" class="imgdog">
+        
+        <div class="test">
+        <h1>CHARLES' PUPPY PURCHASE SITE</h1>
+        <div>
+            <input class="search" 
+                    type="text" 
+                     placeholder="BEAST SUPER SEARCH">
+            <div class="mainbuy">
+                <div>
+            <h2>LETS BUY NOW</h2>
+                <ul>  
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                    <button class="btnow">BUY NOW</button>
+                </div>
+                <div>
+                <h2>LAY AWAY</h2>
+                 <ul>  
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                    <button class="btlater">PAY LATER</button>
+                    </div>
+                    <div>
+         <h2>SEE INVENTORY</h2>
+                 <ul>  
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                    <button class="btfollow">FOLLOW</button>
+                    </div>
+        </div>
+        
+    </body>
+</html>
+
+css:
+
+body{
+    align-content: center;
+background: black;
+}
+
+.imgdog{
+    width:150px;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    border-radius: 20px;
+    border: 20px dotted blue;
+    
+}
+
+.search{
+    border-right:5px dotted red;
+    border-left:5px dotted blue;
+    border-top:10px solid blue;
+    border-bottom:10px solid red;
+    border-radius: 50px;
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.mainbuy{
+    display:flex;
+    color:blue;
+    justify-content: space-between;
+}
+
+.test{
+    text-align: center;
+    color: red;
+    
+}
+
+.btnow{
+    background-color: red;
+    color:white;
+    border:10px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btlater{
+     background-color: blue;
+    color:white;
+    border:10px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btfollow{
+    background-color: red;
+    color:white;
+    border:10px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+Business card & utility class for a single css property:
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <!-- 
+    Challenge:
+    Use what you've just learned to fix our card's broken 
+    column layout (make it two-column instead of four-column)
+     -->
+        <div class="card">
+            <img
+                src="images/per.png"
+                alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar">
+                <div class="text">
+            <h3>Per Harald Borgen</h3>
+            <p>Frontend Developer</p>
+            <h4>Oslo, Norway</h4>
+            </div>
+        </div>
+    </body>
+</html>
+
+body {
+    margin: 20px;
+}
+
+.avatar {
+    width: 150px;
+    margin:20px;
+    border-radius: 10px
+}
+
+.card {
+    border: 1px dotted blue;
+    border-bottom:5px solid violet;
+    padding: 20px;
+    display: flex;
+    background-color:lightcyan;
+    border-radius:15px
+}
+
+.text{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+Utility class= (html) <div class="card utility"></div>
+	       (css) 	.utility{
+  			 border: 1px dotted blue;
+			 }
+
+html:
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card utility">
+            <img
+                src="images/per.png"
+                alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar">
+            <div class="utility">
+                <h3>Per Harald Borgen</h3>
+                <p>Frontend Developer</p>
+                <h4>Oslo, Norway</h4>
+            </div>
+        </div>
+    </body>
+</html>
+
+css:body {
+    margin: 20px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    
+    padding: 20px;
+    display: flex;
+}
+
+/*
+Challenge:
+Create a utility class for the dotted blue border.
+Give the class to both flexbox children in the HTML.
+*/
+.utility{
+    border: 1px dotted blue;
+}
+
+
+Justify the items:
+
+html:
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card border-blue">
+            <img
+                src="images/per.png"
+                alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar border-blue">
+            <div class="border-blue">
+                <h3>Per Harald Borgen</h3>
+                <p>Frontend Developer</p>
+                <h4>Oslo, Norway</h4>
+            </div>
+        </div>
+    </body>
+</html>
+
+css:
+
+body {
+    margin: 20px;
+
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    /*
+    Challenge:
+    Add horizontal space around the flex children.
+    Hint: google "justify content"
+    */
+    justify-content: space-around;
+    text-align:center;
+    
+}
+
+.border-blue {
+    border: 0px dotted blue;
+}
+
+
+css inheritance: enables you to write dryer code meaning you can write less code
+and still receive the same results. Less code is best code and less likely to have fewer Bugs, being more efficient.
+
+Here is the list of all inheritable properies. I'm working with W3C's information, so I'd guess it should be correct. But knowing web browsers (IE specifically), some of these might not be inheritable by all browsers:
+
+1.azimuth
+2.border-collapse
+3.border-spacing
+4.caption-side
+5.color
+6.cursor
+7.direction
+8.elevation
+9.empty-cells
+10.font-family
+11.font-size
+12.font-style
+13.font-variant
+14.font-weight
+15.font
+16.letter-spacing
+17.line-height
+18.list-style-image
+19.list-style-position
+20.list-style-type
+21.list-style
+22.orphans
+23.pitch-range
+24.pitch
+25.quotes
+26.richness
+27.speak-header
+28.speak-numeral
+29.speak-punctuation
+30.speak
+31.speech-rate
+32.stress
+33.text-align
+34.text-indent
+35.text-transform
+36.visibility
+37.voice-family
+38.volume
+39.white-space
+40.widows
+41.word-spacing
+
+
+ADD COLOR:
+html:<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card">
+            <img
+                src="images/per.png"
+                alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar">
+            <div>
+                <h3>Per Harald Borgen</h3>
+                <p>Frontend Developer</p>
+                <h4>Oslo, Norway</h4>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+css:
+
+body {
+    margin: 20px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    /* 
+    Challenge:
+    Add colors to the card according to the design.
+    black - #2b2839 (the text color)
+    blue - #ddebf8
+    purple - #d8cefe
+    */
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+    
+
+Short-hand margins:
+"margin: 40 20 40 20" is the short hand for the following margins:
+
+margin-top: 40px;
+    margin-right: 20;
+    margin-bottom: 40;
+    margin-left: 20px;
+
+or for example: margin-top:10px;
+		 margin-bottom:10px;
+		   margin-left:auto;
+			 margin-right:auto;   the short hand for this is margin:10px auto;
+
+using coolors.com
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card">
+            <img class="avatar" src="put your picture here">
+            <div >
+                <h3>Per Harald Borgen</h3>
+                <p>Frontend Developer</p>
+                <h4>Oslo, Norway</h4>
+            </div>
+        </div>
+
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family:cursive;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #DBB42C;
+    color: #76520E;
+    border-bottom: 6px solid #76520E;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+
+
+    </body>
+</html>

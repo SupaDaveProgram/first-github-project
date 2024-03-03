@@ -210,8 +210,6 @@ section {
   animation: banger 1000ms infinite alternate;
 }
 
-.dont-judge:hover {
-}
 
 .cast__pic-pd {
   margin: 220px 15px;
@@ -324,6 +322,3 @@ justify-content:center;
   margin: 0px 10px;
 }
 
-.copyright {
-  c
-}

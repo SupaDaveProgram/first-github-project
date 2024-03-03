@@ -235,21 +235,22 @@ section {
 }
 
 .queen__p {
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
   top: 2770px;
-  left: 80px;
+  left: 60px;
   color: goldenrod;
-  animation: nameChange2 900ms infinite alternate-reverse;
+  animation: nameChange2 1000ms infinite alternate-reverse;
 }
 
 .jadessa {
+  font-size: 35px;
   position: absolute;
   position: absolute;
   top: 2835px;
-  left: 955px;
+  left: 875px;
   color: goldenrod;
-  animation: nameChange 900ms infinite alternate-reverse;
+  animation: nameChange 1000ms infinite alternate-reverse;
 }
 
 @keyframes nameChange {
@@ -260,7 +261,7 @@ section {
     color: blueviolet;
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(15px);
     color: aliceblue;
   }
   90% {

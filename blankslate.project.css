@@ -1,91 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-img {
-  width: 300px;
-}
+  body {
+    color: red;
+    background-image: url(./Repositories/nightglamar.jpeg);
+  }
 
-nav {
-  width: 100%;
-  height: 70px;
-  background-color: aqua;
-  display: flex;
+  .title__pic {
+   width: 20vw; 
+   height: 40vh;
+   border-radius: 30px;
+   scale: 1.1;
+   opacity: .6;
+   box-shadow: black 0px 1px 15px 4px ;
+  }
 
-}
+  .davi__pic--pink {
+    width: 100px;
+    border-radius: 50px;
+    scale: 1.1;
+  }
 
-#nav__section {
-width: 100%;
-display: flex;
-}
+  .firstborn__para-pic {
+    width: 50px;
+    border-radius: 50px;  
+  }
 
-.nav__wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .firstborn__para-bigpic {
+    width: 20%;
+    border-radius: 5px;
+  }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  margin-right: 8px;
-}
+  ul {
+    
 
-a {
-  text-decoration: none;
-  padding-left: 16px;
-  color: aliceblue;
-}
+  }
 
-span {
-  color: aqua;
-}
+  #nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.591);
+    padding: 16px;
+  }
 
-main {
-  text-align: center;
-}
+  li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    margin-right: 12px;
+    
+  }
 
-.main_sections {
-  padding: 100px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    font-weight: 900px;
+  }
 
-}
+  /* 1st born */
 
-p {
-  padding: 20px;
-  margin-left: 20px;
-}
+  .firstborn__wrapper {
+    text-align: center;
+  }
 
-h1 {
-  padding: 40px;
-}
+  .span__color-link {
+    color: pink;
+    font-size: 24px;
+    padding: 1px;
+    font-weight: 900;
+  }
 
-#two,
-#four {
-  background-color:aqua;
-}
+  .para__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 
-footer {
-  padding: 20px;
-  background-color: black;
-  color: aqua;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .firstborn__para-bigpic {
+    width: 100%;
+  }
 
-.footer__img {
-  padding: 10px;
-  width: 100px;
-  border-radius: 20px;
-}
+  
